@@ -10,10 +10,12 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="ComputerRemote.vi" Type="VI" URL="../ComputerRemote.vi"/>
+		<Item Name="temp" Type="Folder">
+			<Item Name="ComputerRemote.vi" Type="VI" URL="../ComputerRemote.vi"/>
+			<Item Name="oldStudicaJoystick.ctl" Type="VI" URL="../oldStudicaJoystick.ctl"/>
+		</Item>
 		<Item Name="ComputerRemoteForOldJoystick.vi" Type="VI" URL="../ComputerRemoteForOldJoystick.vi"/>
 		<Item Name="LMH-PS4.lvlib" Type="Library" URL="../LMH-PS4/LMH-PS4.lvlib"/>
-		<Item Name="oldStudicaJoystick.ctl" Type="VI" URL="../oldStudicaJoystick.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Input Data.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Acquire Input Data.vi"/>
@@ -144,19 +146,32 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="1motorPosCtrl (SubVI).vi" Type="VI" URL="../1motorPosCtrl (SubVI).vi"/>
-		<Item Name="1motorPosCtrlTest.vi" Type="VI" URL="../1motorPosCtrlTest.vi"/>
-		<Item Name="1motorPwm (SubVI).vi" Type="VI" URL="../1motorPwm (SubVI).vi"/>
-		<Item Name="1motorPwmTest.vi" Type="VI" URL="../1motorPwmTest.vi"/>
-		<Item Name="1motorVelCtrl (SubVI).vi" Type="VI" URL="../1motorVelCtrl (SubVI).vi"/>
-		<Item Name="1motorVelCtrlTest.vi" Type="VI" URL="../1motorVelCtrlTest.vi"/>
-		<Item Name="3motorVelCtrl (SubVI).vi" Type="VI" URL="../3motorVelCtrl (SubVI).vi"/>
-		<Item Name="3motorVelCtrlTest.vi" Type="VI" URL="../3motorVelCtrlTest.vi"/>
-		<Item Name="moterVelControl.vi" Type="VI" URL="../moterVelControl.vi"/>
-		<Item Name="NormalizeYAxis (SubVI).vi" Type="VI" URL="../NormalizeYAxis (SubVI).vi"/>
-		<Item Name="readMotorEncoder (SubVI).vi" Type="VI" URL="../readMotorEncoder (SubVI).vi"/>
-		<Item Name="Remote.vi" Type="VI" URL="../Remote.vi"/>
-		<Item Name="Remote_______3.vi" Type="VI" URL="../Remote_______3.vi"/>
+		<Item Name="Math" Type="Folder">
+			<Item Name="NormalizeYAxis (SubVI).vi" Type="VI" URL="../NormalizeYAxis (SubVI).vi"/>
+		</Item>
+		<Item Name="MotorControl" Type="Folder">
+			<Item Name="1motorPosCtrl (SubVI).vi" Type="VI" URL="../1motorPosCtrl (SubVI).vi"/>
+			<Item Name="1motorPwm (SubVI).vi" Type="VI" URL="../1motorPwm (SubVI).vi"/>
+			<Item Name="1motorVelCtrl (SubVI).vi" Type="VI" URL="../1motorVelCtrl (SubVI).vi"/>
+			<Item Name="3motorVelCtrl (SubVI).vi" Type="VI" URL="../3motorVelCtrl (SubVI).vi"/>
+			<Item Name="readMotorEncoder (SubVI).vi" Type="VI" URL="../readMotorEncoder (SubVI).vi"/>
+			<Item Name="servoClose (SubVI).vi" Type="VI" URL="../servoClose (SubVI).vi"/>
+			<Item Name="servoName.ctl" Type="VI" URL="../servoName.ctl"/>
+			<Item Name="servoOpen (SubVI).vi" Type="VI" URL="../servoOpen (SubVI).vi"/>
+			<Item Name="servoPos (SubVI).vi" Type="VI" URL="../servoPos (SubVI).vi"/>
+		</Item>
+		<Item Name="temp" Type="Folder">
+			<Item Name="moterVelControl.vi" Type="VI" URL="../moterVelControl.vi"/>
+			<Item Name="Remote.vi" Type="VI" URL="../Remote.vi"/>
+			<Item Name="Remote_______3.vi" Type="VI" URL="../Remote_______3.vi"/>
+		</Item>
+		<Item Name="Test" Type="Folder">
+			<Item Name="1motorPosCtrlTest.vi" Type="VI" URL="../1motorPosCtrlTest.vi"/>
+			<Item Name="1motorPwmTest.vi" Type="VI" URL="../1motorPwmTest.vi"/>
+			<Item Name="1motorVelCtrlTest.vi" Type="VI" URL="../1motorVelCtrlTest.vi"/>
+			<Item Name="3motorVelCtrlTest.vi" Type="VI" URL="../3motorVelCtrlTest.vi"/>
+			<Item Name="ServoTest.vi" Type="VI" URL="../ServoTest.vi"/>
+		</Item>
 		<Item Name="RemoteForOldJoystick.vi" Type="VI" URL="../RemoteForOldJoystick.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
