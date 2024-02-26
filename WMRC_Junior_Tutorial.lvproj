@@ -144,7 +144,9 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+		<Item Name="1motorPwm (SubVI).vi" Type="VI" URL="../1motorPwm (SubVI).vi"/>
 		<Item Name="moterVelControl.vi" Type="VI" URL="../moterVelControl.vi"/>
+		<Item Name="NormalizeYAxis (SubVI).vi" Type="VI" URL="../NormalizeYAxis (SubVI).vi"/>
 		<Item Name="Remote.vi" Type="VI" URL="../Remote.vi"/>
 		<Item Name="RemoteForOldJoystick.vi" Type="VI" URL="../RemoteForOldJoystick.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
