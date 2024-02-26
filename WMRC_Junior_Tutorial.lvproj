@@ -148,6 +148,7 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Math" Type="Folder">
 			<Item Name="NormalizeYAxis (SubVI).vi" Type="VI" URL="../NormalizeYAxis (SubVI).vi"/>
+			<Item Name="risingEdge (SubVI).vi" Type="VI" URL="../risingEdge (SubVI).vi"/>
 		</Item>
 		<Item Name="MotorControl" Type="Folder">
 			<Item Name="1motorPosCtrl (SubVI).vi" Type="VI" URL="../1motorPosCtrl (SubVI).vi"/>
@@ -213,8 +214,10 @@ AddOutputFilter chunkFilter
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="Motor ID.ctl" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX TitanQuad/Motor ID.ctl"/>
 				<Item Name="mouseAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/mouseAcquire.vi"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
+				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Open.vi" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX TitanQuad/Open.vi"/>
 				<Item Name="Open.vi" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX VMXpi/Digital Input/Open.vi"/>
@@ -246,6 +249,7 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="LMH-PS4.lvlib" Type="Library" URL="../LMH-PS4/LMH-PS4.lvlib"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
 			<Item Name="oldStudicaJoystick.ctl" Type="VI" URL="../oldStudicaJoystick.ctl"/>
 			<Item Name="Open.vi" Type="VI" URL="../LMH-PS4/Public/Open.vi"/>
