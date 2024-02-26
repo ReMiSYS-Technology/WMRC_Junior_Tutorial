@@ -144,10 +144,19 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+		<Item Name="1motorPosCtrl (SubVI).vi" Type="VI" URL="../1motorPosCtrl (SubVI).vi"/>
+		<Item Name="1motorPosCtrlTest.vi" Type="VI" URL="../1motorPosCtrlTest.vi"/>
 		<Item Name="1motorPwm (SubVI).vi" Type="VI" URL="../1motorPwm (SubVI).vi"/>
+		<Item Name="1motorPwmTest.vi" Type="VI" URL="../1motorPwmTest.vi"/>
+		<Item Name="1motorVelCtrl (SubVI).vi" Type="VI" URL="../1motorVelCtrl (SubVI).vi"/>
+		<Item Name="1motorVelCtrlTest.vi" Type="VI" URL="../1motorVelCtrlTest.vi"/>
+		<Item Name="3motorVelCtrl (SubVI).vi" Type="VI" URL="../3motorVelCtrl (SubVI).vi"/>
+		<Item Name="3motorVelCtrlTest.vi" Type="VI" URL="../3motorVelCtrlTest.vi"/>
 		<Item Name="moterVelControl.vi" Type="VI" URL="../moterVelControl.vi"/>
 		<Item Name="NormalizeYAxis (SubVI).vi" Type="VI" URL="../NormalizeYAxis (SubVI).vi"/>
+		<Item Name="readMotorEncoder (SubVI).vi" Type="VI" URL="../readMotorEncoder (SubVI).vi"/>
 		<Item Name="Remote.vi" Type="VI" URL="../Remote.vi"/>
+		<Item Name="Remote_______3.vi" Type="VI" URL="../Remote_______3.vi"/>
 		<Item Name="RemoteForOldJoystick.vi" Type="VI" URL="../RemoteForOldJoystick.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -155,7 +164,10 @@ AddOutputFilter chunkFilter
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Close All IO.vi" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX VMXpi/Utilities/Close All IO.vi"/>
 				<Item Name="Close Input Device.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Close Input Device.vi"/>
+				<Item Name="Close.vi" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX TitanQuad/Close.vi"/>
+				<Item Name="Close.vi" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX VMXpi/PWM Generator/Close.vi"/>
 				<Item Name="closeJoystick.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/closeJoystick.vi"/>
 				<Item Name="closeKeyboard.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/closeKeyboard.vi"/>
 				<Item Name="closeMouse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/closeMouse.vi"/>
@@ -184,14 +196,23 @@ AddOutputFilter chunkFilter
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="Motor ID.ctl" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX TitanQuad/Motor ID.ctl"/>
 				<Item Name="mouseAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/mouseAcquire.vi"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="Open.vi" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX TitanQuad/Open.vi"/>
+				<Item Name="Open.vi" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX VMXpi/Digital Input/Open.vi"/>
+				<Item Name="Open.vi" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX VMXpi/Digital Output/Open.vi"/>
+				<Item Name="Open.vi" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX VMXpi/PWM Generator/Open.vi"/>
 				<Item Name="Query Input Devices.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Query Input Devices.vi"/>
+				<Item Name="Read Encoder.vi" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX TitanQuad/Read Encoder.vi"/>
+				<Item Name="Read.vi" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX VMXpi/Digital Input/Read.vi"/>
 				<Item Name="RemoteVariables.lvlib" Type="Library" URL="/&lt;vilib&gt;/ReMiSYS Technology/RemoteToolkit/RemoteVariables.lvlib"/>
+				<Item Name="Reset Encoder.vi" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX TitanQuad/Reset Encoder.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
+				<Item Name="Set Enabled.vi" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX TitanQuad/Set Enabled.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
@@ -199,8 +220,12 @@ AddOutputFilter chunkFilter
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="TitanQuad.lvlib" Type="Library" URL="/&lt;vilib&gt;/CISH Robotics/L4VMX TitanQuad/TitanQuad.lvlib"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="VMX Channel Index.ctl" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX VMXpi/Type Def/VMX Channel Index.ctl"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Write.vi" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX VMXpi/Digital Output/Write.vi"/>
+				<Item Name="Write.vi" Type="VI" URL="/&lt;vilib&gt;/ReMiSYS Technology/L4VMX VMXpi/PWM Generator/Write.vi"/>
 			</Item>
+			<Item Name="1motor (SubVI).vi" Type="VI" URL="../1motor (SubVI).vi"/>
 			<Item Name="DpadEnum.ctl" Type="VI" URL="../LMH-PS4/Private/Type Defs/DpadEnum.ctl"/>
 			<Item Name="L4VMXCLIT.dll" Type="Document" URL="L4VMXCLIT.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -209,6 +234,8 @@ AddOutputFilter chunkFilter
 			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
 			<Item Name="oldStudicaJoystick.ctl" Type="VI" URL="../oldStudicaJoystick.ctl"/>
 			<Item Name="Open.vi" Type="VI" URL="../LMH-PS4/Public/Open.vi"/>
+			<Item Name="stu.ctl" Type="VI" URL="../stu.ctl"/>
+			<Item Name="Untitled 1 (SubVI).vi" Type="VI" URL="../Untitled 1 (SubVI).vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
