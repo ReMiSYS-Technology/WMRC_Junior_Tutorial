@@ -195,6 +195,7 @@ AddOutputFilter chunkFilter
 		<Item Name="RemoteControlForFTJH.vi" Type="VI" URL="../RemoteControlForFTJH.vi"/>
 		<Item Name="RemoteForKeyboard.vi" Type="VI" URL="../RemoteForKeyboard.vi"/>
 		<Item Name="RemoteForOldJoystick.vi" Type="VI" URL="../RemoteForOldJoystick.vi"/>
+		<Item Name="RunAsStartupBuzzerTest.vi" Type="VI" URL="../RunAsStartupBuzzerTest.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Input Data.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Acquire Input Data.vi"/>
@@ -282,12 +283,12 @@ AddOutputFilter chunkFilter
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="My Real-Time Application" Type="{117D6E82-86E4-4435-99C8-B638EE47B29E}">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{830B5FF8-B06C-4CEA-B0BE-D4B3A4CED118}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{EFD3EB2F-D777-4FFF-82E5-4D3149BA9593}</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{A7966EC8-AF7F-4BD4-9289-A4527D145F92}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{FCF4503A-F3EB-4424-83ED-BEDA3D592AFB}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="App_serverType" Type="Int">0</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{B1767965-C516-4D00-905A-CEDCD7729704}</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{8091B66C-0E04-48E5-93B9-990A229C7B8B}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">My Real-Time Application</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
@@ -295,9 +296,9 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/My Real-Time Application</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{F4D0A85D-F335-43B9-A605-FA303A93654A}</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{C5BF3F94-5EDA-4B6F-8361-382066656735}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -308,19 +309,22 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{CA22A451-BFDA-4B62-9B85-A2F3C3B076DE}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B00F3B6C-08F8-47F8-9E8A-990779CDE5EE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/VMX/temp/Remote.vi</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/VMX/RunAsStartupBuzzerTest.vi</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/VMX/RemoteControlForFTJH.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_companyName" Type="Str">ReMiSYS Technology Co., LTD.</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">My Real-Time Application</Property>
 				<Property Name="TgtF_internalName" Type="Str">My Real-Time Application</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright ?2024 ReMiSYS Technology Co., LTD.</Property>
 				<Property Name="TgtF_productName" Type="Str">My Real-Time Application</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{5ED5E620-57AE-4537-8A3C-6122CAB36575}</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{57C55767-17A9-4D36-90E0-208D7DCC0ACB}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
